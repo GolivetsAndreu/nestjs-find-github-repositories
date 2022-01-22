@@ -13,7 +13,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  search(@Query() query: SearchDto): string {
+  search(@Query() query: SearchDto) {
     return this.appService.search(query);
   }
 }
